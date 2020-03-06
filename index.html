@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta  http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="webpage/bootstrap.min.css"/>
+    <script language="javascript" src="webpage/jquery.min.js"></script>
+	<script language="javascript" src="webpage/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="webpage/cssReset.css"/>
+	<title>Jie Zhou 周杰</title>
+	<meta name="description" content="Personal website for Jie Zhou at East Chian Normal University. Jie Zhou is a Ph.D. candidate in the School of Computer Science and Technology at East China Normal University. Received the graduation degree from Zhejiang Normal University, China, in 2016. His research interests include natural language processing, sentiment analysis and deep learning.">
+	<meta name="keywords" content="Jie Zhou,ECNU,NLP,PhD">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156016426-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156016426-1');
+</script>
+
+</head>
+<body>
+<style type='text/css'>
+	body{
+		font-family:arial,"Microsoft YaHei",微软雅黑,宋体,Helvetica;
+		font-size:15px;
+	}
+	/*
+		div.content:
+			provide the content div in the middle
+	*/
+	body div.content{
+		/*width:1280px;*/
+		width:1000px;
+		margin:0 auto;
+		line-height:30px;
+	}
+	/*
+		header wrapper
+	*/
+	body div.header{
+		background-color:#2196F3;
+	}
+	body div.header > div.content{
+		padding:10px;
+	}
+	/*
+		footer1
+	*/
+	body div.footer1{
+		margin-top:30px;
+		background-color:#64B5F6;
+	}
+	/*
+		footer2
+	*/
+	body div.footer2{
+		background-color:#2196F3;
+	}
+	body div.footer > div.content{
+		padding:10px;
+	}
+	body div.footer1 > div.content{
+		padding:20px;
+		line-height:40px;
+		font-size:1.2em;
+	}
+	/*
+		utils css
+	*/
+	div.white-text{
+		color:white;
+	}
+	div.content > div.title{
+		padding:20px 0;
+		border-top:1px silver solid;
+		margin-top:30px;
+		font-size:2em;
+		font-weight:bold;
+	}
+	body a{
+		text-decoration:none;
+	}
+	div.content ul{
+		list-style: disc inside none;
+	}
+	div.content ol{
+		list-style: decimal inside none;
+	}
+	div.content li{
+		line-height:30px;
+		padding-bottom:5px;
+	}
+	div.content div.float-right{
+		float:right;
+	}
+</style>
+<!-- css for bio -->
+<style type="text/css">
+	/*
+		bio
+	*/
+	div.bio{
+		font-size:1.2em;
+	}
+	div.bio > div.left{
+		float:left;
+		width:280px;
+	}
+	div.bio > div.left > img.me{
+		max-height:250px;
+		margin:10px;
+		max-width:230px;
+		margin-top:20px;
+	}
+
+	div.bio > div.right{
+		margin:0 0 0 300px;
+		min-height:300px;
+	}
+	div.bio > div.right > div.line.name{
+		padding:15px 0;
+		line-height:40px;
+	}
+	div.bio > div.right > div.name > span.name,div.bio > div.right > div.name > span.chineseName{
+		font-size:2em;
+		font-weight:bold;
+	}
+	div.bio > div.right > div.name > span.chinesesName{
+		font-family:"Microsoft YaHei",微软雅黑,宋体,Helvetica,arial;
+	}
+	div.bio > div.right > div.name > span.misc{
+		font-size:1.5em;
+		font-weight:bold;
+	}
+	div.bio > div.right > div.line.school{
+		padding:5px 0;
+	}
+
+	div.bio > div.right > div.line.office{
+		padding:5px 0;
+	}
+
+</style>
+<!-- quick link and intro -->
+<style type="text/css">
+div.quickLink{
+	min-height:70px;
+}
+div.quickLink > .block{
+	display:block;
+	float:left;
+	padding:10px 0px;
+	text-align:center;
+	border:1px silver solid;
+	border-radius:5px;
+	box-shadow:2px 2px 1px silver;
+	width:140px;
+	margin-right:50px;
+	margin-top:20px;
+	cursor:pointer;
+}
+</style>
+<!-- research and education -->
+<style type="text/css">
+div.research > ul > li > span.title,div.research > ul > li > div.time,
+div.education > ul > li > span.title,div.education > ul > li > div.time,
+div.pro > ul > li > span.title{
+	font-weight:bold;
+	font-size:1.1em;
+}
+div.research > ul > li > div.info,
+div.education > ul > li > div.info,
+div.pro > ul > li > div.info{
+	padding-left:20px;
+	word-wrap:break-word;
+}
+</style>
+<!-- publications -->
+<style type="text/css">
+div.publications > ol > li{
+	padding-bottom: 30px;
+}
+div.publications > ol > li > span.title{
+	font-weight:bold;
+	font-size:1.1em;
+}
+div.publications > ol > li > div.info{
+	padding-left:20px;
+	word-wrap:break-word;
+}
+div.publications div.imgblock{
+	float:left;
+	height:160px;
+	width:300px;
+	padding:10px;
+	text-align: center;
+}
+div.publications div.imgblock > img{
+	max-width:100%;
+	max-height:100%;
+}
+img.press{
+	height:20px;
+}
+</style>
+<div class="header">
+	<div class="content white-text">
+		Jie Zhou
+	</div>
+</div>
+
+
+<div class="content bio">
+	<!-- bio -->
+	<div class="left">
+		<img class='me' src="resources/me.jpeg"></img>
+		<a href="https://scholar.google.com/citations?user=dKt8wwQAAAAJ&hl=zh-CN">
+			<img class='scholar' style="height:30px" src="resources/googlescholar.png"></img>
+		</a>
+		<a href="https://github.com/12190143">
+			<img class='github' style="height:30px" src="resources/github.png"></img>
+		</a>
+		<a href="https://www.zhihu.com/people/zhou-jie-77-75">
+			<img class='zhihu' style="height:25px" title="My Zhihu page" src="resources/zhihu.png"></img>
+		</a>
+		<a href="https://dblp.uni-trier.de/pers/hd/z/Zhou_0015:Jie">
+			<img class='dblp' style="height:20px" src="resources/dblp.png"></img>
+		</a>
+
+	</div>
+	<div class="right">
+		<div class="line name">
+			<span class="name">Jie Zhou</span>
+			<span class="misc">(Ph.D. Candidate)</span> &nbsp; &nbsp; &nbsp;
+			<span class="chineseName">周杰</span>
+		</div>
+		<div class="line school">
+			ICA
+		</div>
+		<div class="line school">
+			School of Computer Science and Technology
+		</div>
+		<div class="line school">
+			East China Normal University
+		</div>
+		<br/>
+		<div class="line office">
+			Office: 3663 N. Zhongshan Rd., Shanghai 200062
+		</div>
+		<div class="line office">
+			Email: jzhou@ica.stc.sh.cn
+		</div>
+	</div>
+</div>
+
+<div class="content quickLink">
+	<a class="block" href="#publications">Publications</a>
+	<a class="block" href="#honors">Awards</a>
+	<a class="block" href="#challenges">Challenges</a>
+	<a class="block" href="https://github.com/12190143" target="_blank">Code</a>
+	<a class="block" href="resources/CV_ZhouJie.pdf" target="_blank">CV</a>
+</div>
+
+<div class="content intro">
+	<div class='title'>About me</div>
+	Greetings! I'm a 4th year Ph.D. student under the supervision of <a href="#">Prof. Liang He</a> at East China Normal University. My research interests are sentiment analysis, deep learning and natural language processing. Before graduation, I worked as an International Visiting Research Trainee in the lab of Information Retrieval and Knowledge Management in York University, Canada (2018.10-2019.10).
+</div>
+
+<div class="content education">
+	<a name="education"></a>
+	<div class="title">Educations</div>
+	<ul>
+		<li>
+			<span class="title">Ph.D.</span> <div class="float-right time">2016 - present</div>
+			<div class="info">School of Computer Science and Technology, East China Normal University</div>
+			<div class="info">Advisor: <a href="#">Jie Zhou</a></div>
+		</li>
+		<li>
+			<span class="title">B.S. in Computer Science</span> <div class="float-right time">2012 - 2016</div>
+			<div class="info">Zhejiang Normal University</div>
+		</li>
+	</ul>
+</div>
+
+<div class="content honors" name='honors'>
+	<a name="honors"></a>
+	<div class="title">Awards</div>
+	<ul>
+		<li>First prize of China Post-graduate Mathemathical Contest in Modeling <div class="float-right">2016</div></li>
+		<li>National scholarship <div class="float-right">2014</div></li>
+		<li>First class scholarship for outstanding students of Zhejiang Normal University <div class="float-right">2014</div></li>
+		<li>Miyoshi students of Zhejiang Normal University <div class="float-right">2014</div></li>
+		<li>Bronze Award in ACM Programming Design Competition of Asia <div class="float-right">2014</div></li>
+		<li>Gold Award in College Student Program Design Competition of Zhejiang Province <div class="float-right">2014</div></li>
+		<li>First class scholarship for outstanding students of Zhejiang Normal University <div class="float-right">2013</div></li>
+		<li>Bronze Award in ACM Programming Design Competition of Asia <div class="float-right">2013</div></li>
+	</ul>
+</div>
+
+<div class="content challenges" name='challenges'>
+	<a name="challenges"></a>
+	<div class="title">Challenges</div>
+	<ul>
+		<li>KDD CUP 2017 <div class="float-right">2nd Place (2/3582)</div><a href="https://www.kdd.org/kdd2017/News/view/announcing-kdd-cup-2017-highway-tollgates-traffic-flow-prediction" target="_blank">Highway Tollgates Traffic Flow Prediction </a>(<a href="https://github.com/12190143/Black-Swan" target="_blank">code</a>)</li>
+		<li>KDD CUP 2018 <div class="float-right">3rd Place (3/5415)</div><a href="https://www.kdd.org/kdd2018/kdd-cup" target="_blank">KDD Cup of Fresh Air </a>(<a href="https://github.com/12190143/KDD_CUP_2018" target="_blank">code</a>)</li>
+		<li>IKCEST “The Belt and Road” International Big Data Contest <div class="float-right">1st Place (1/2312)</div><a href="https://dianshi.baidu.com/competition/30/rule" target="_blank">Urban Region Function Classification </a>(<a href="https://github.com/zhuqunxi/Urban-Region-Function-Classification" target="_blank">code</a>)</li>
+		<li>2019 Zhijiang Lab Cup Global AI Competition <div class="float-right">2nd Place (2/586)</div><a href="http://aicup2019.zhejianglab.com/" target="_blank">E-commerce comments opinion mining </a></li>
+		<li>CCL-CMRC-2017 <div class="float-right">1st Place</div><a href="https://hfl-rc.github.io/cmrc2017/" target="_blank">The First Evaluation on Chinese Machine Reading Comprehension </a></li>
+	</ul>
+</div>
+
+<div class="content publications">
+	<a name="publications"></a>
+	<div class="title">Selected Publications [<a href="https://scholar.google.com/citations?user=dKt8wwQAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>]</div>
+	<ol>
+		<li>
+			<span class="title">SNNN: Promoting Word Sentiment and Negation in Neural Sentiment Classification.
+			</span>
+			<div class="info text-info">Q. V. Hu (Advisor), J. Zhou, Q. Chen and L. He.</div>
+			<div class="info">AAAI, 2018. (CCF A)</div>
+			<!-- <div style="clear:both"></div> -->
+		</li>
+		<li>
+			<span class="title">Position-aware Hierarchical Transfer Model for Aspect-level Sentiment Classification[J]
+			</span>
+			<div class="info text-info">J. Zhou, Q. Chen, J. X. Huang, Q. V. Hu and L. He.</div>
+			<div class="info">Information Sciences, 2020. (SCI I) </div>
+			<!-- <div style="clear:both"></div> -->
+		</li>
+		<li>
+			<span class="title">Modeling Multi-Aspect Relationship for Aspect-Level Sentiment Classification.
+			</span>
+			<div class="info text-info">J. Zhou, J. X. Huang, Q. V. Hu and L. He.</div>
+			<div class="info">DASFAA, 2020. Accepted (CCF B)</div>
+			<!-- <div style="clear:both"></div> -->
+		</li>
+		<li>
+			<span class="title">Deep Learning for Aspect-Level Sentiment Classification: Survey, Vision and Challenges[J].
+			</span>
+			<div class="info text-info">J. Zhou, J. X. Huang, Q. Chen, Q. V. Hu, T. Wang and L. He.</div>
+			<div class="info">IEEE Access, 2019. (SCI II)</div>
+			<!-- <div style="clear:both"></div> -->
+		</li>
+		<li>
+			<span class="title">A Data Driven Collaborative Caring Framework for Aging in Place in China.
+			</span>
+			<div class="info text-info">J. Zhou, Y. Sun, and L. He.</div>
+			<div class="info">CSCWD, 2018. (CCF C)</div>
+			<!-- <div style="clear:both"></div> -->
+		</li>
+		<li>
+			<span class="title">Aspect-level Sentiment Classification with Reinforcement Learning.
+			</span>
+			<div class="info text-info">T. Wang, J. Zhou, Q. V. Hu and L. He.</div>
+			<div class="info">IJCNN, 2019. (CCF C)</div>
+			<!-- <div style="clear:both"></div> -->
+		</li>
+		<li>
+			<span class="title">Modeling User- Item Profiles with Neural Networks for Rating Prediction.
+			</span>
+			<div class="info text-info">L. Chen, J. Zhou, L. He, Q. Chen, J. Zhang and Y. Yang.</div>
+			<div class="info">ICTAI, 2017. (CCF C)</div>
+			<!-- <div style="clear:both"></div> -->
+		</li>
+		<li>
+			<span class="title">iCare Designer: A Rule-Driven Layout Co-Designing System for Elderly Caring.
+			</span>
+			<div class="info text-info">Y. Sun, J. Zhou, D. Yao and L. He.</div>
+			<div class="info">CSCWD, 2017. (CCF C)</div>
+			<!-- <div style="clear:both"></div> -->
+		</li>
+		<li>
+			<span class="title">DSPF: A Digital Signal Processing Based Framework for Information Retrieval.
+			</span>
+			<div class="info text-info">Z. Ying, J. X. Huang, J. Zhou, F. Jian and T. He.</div>
+			<div class="info">IEEE Access, 2019. (SCI II)</div>
+			<!-- <div style="clear:both"></div> -->
+		</li>
+		<li>
+			<span class="title">A New Signal Filtering Based Model with Multi-Aspect Term Frequency for Information Retrieval.
+			</span>
+			<div class="info text-info">Z. Ying, J. X. Huang, J. Zhou and L. Liu.</div>
+			<div class="info">IEEE Access, 2019. (SCI II)</div>
+			<!-- <div style="clear:both"></div> -->
+		</li>
+		<li>
+			<span class="title">Multi-model Hybrid Traffic Flow Forecast Algorithm Based on Multivariate Data.
+			</span>
+			<div class="info text-info">J. Zhou, Y. Sun, and L. He.</div>
+			<div class="info">CCF Conference on Computer Supported Cooperative Work and Social Computing, 2018. (EI)</div>
+			<!-- <div style="clear:both"></div> -->
+		</li>
+		<li>
+			<span class="title">ECNU at MC2 2018 Task 2: Mining Opinion Argumentation.
+			</span>
+			<div class="info text-info">J. Zhou, Q. Zhang, Q. V. Hu, and L. He.</div>
+			<div class="info">SemEval, 2018.</div>
+			<!-- <div style="clear:both"></div> -->
+		</li>
+	</ul>
+</div>
+
+
+<div class="content pro">
+	<div class="title">Academic Service</div>
+	<ul>
+		<li>
+			<span class="title">Journal Reviewer</span>
+			<div class="info">Information Sciences</div>
+			<div class="info">Data & Knowledge Engineering</div>
+		</li>
+		<!-- <li>
+			<span class="title">Conference Reviewer</span>
+		</li> -->
+	</ul>
+</div>
+
+
+
+<div class="footer footer1">
+	<div class="content white-text">
+		ICA <br/>
+		School of Computer Science and Technology <br/>
+		East China Normal University
+	</div>
+<div class="footer footer2">
+	<div class="content white-text">
+		Created and designed by <a style="color:white" href="https://jiezhou.info">Jie Zhou</a> in ECNU.
+	</div>
+</div>
+
+</body>
+</html>
